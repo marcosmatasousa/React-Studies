@@ -1,0 +1,28 @@
+.main {
+    background-color: #282D35;
+    color: white;
+    width: 550px;
+    height: 459px;
+    padding: 30px;
+    background-image: url('src/assets/reactjs-icon 2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main > h1 {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+li {
+    padding-block: 10px;
+    max-width: 400px;
+}
+
+li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+}

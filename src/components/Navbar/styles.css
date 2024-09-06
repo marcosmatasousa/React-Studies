@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+.nav {
+    background-color: #21222A;
+    height: 91px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 1px;
+}
+
+.react-facts {
+    padding: 0px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.headerTitle {
+    color: white;
+    margin-right: 25px;
+    font-weight: 700px;
+}
