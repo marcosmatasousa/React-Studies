@@ -1,0 +1,23 @@
+.container {
+    width: 247px;
+    height: 61px;
+    margin-left: 36px;
+    margin-right: 34px;
+    margin-bottom: 37px;
+}
+
+.title {
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.text {
+    margin: 0;
+    text-align: justify;
+    color: #DCDCDC;
+    font-size: 10.24px;
+    font-weight: 400;
+}

@@ -1,11 +1,11 @@
 import Navbar from '../Navbar/Navbar'
-import Main from '../Facts/Facts'
+import Facts from '../Facts/Facts'
 
 function ReactFacts(){
     return(
         <div>
             <Navbar />
-            <Main />
+            <Facts />
         </div>
     )
 }

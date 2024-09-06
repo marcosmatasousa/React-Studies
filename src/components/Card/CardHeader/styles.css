@@ -1,0 +1,26 @@
+body {
+    font-family: Inter, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding-top: 21px;
+}
+
+h2 { 
+    color: #F3BF99;
+    text-align: center;
+    font-size: 12.8px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+p {
+    text-align: center;
+    font-size: 10.24px;
+    font-weight: 400;
+}

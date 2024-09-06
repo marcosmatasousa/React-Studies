@@ -1,0 +1,42 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 33px;
+    gap: 17px
+}
+
+.emailButton {
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    width: 115px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.linkedinButton {
+    background: #5093E2;
+    border-radius: 6px;
+    width: 115px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+img {
+    margin-top: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}

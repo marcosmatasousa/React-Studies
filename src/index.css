@@ -1,6 +1,6 @@
-body {
+body, html {
+  background-color: #23252C;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 80vh;
+  margin-top: 20px;
 }
