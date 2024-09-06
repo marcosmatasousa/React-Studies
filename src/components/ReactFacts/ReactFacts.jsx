@@ -1,5 +1,5 @@
 import Navbar from '../Navbar/Navbar'
-import Main from '../Main/Main'
+import Main from '../Facts/Facts'
 
 function ReactFacts(){
     return(
