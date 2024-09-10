@@ -2,10 +2,10 @@ import './styles.css'
 
 function CardHeader() {
     return(
-        <div>
-            <h1>Marcos da Mata</h1>
-            <h2>Computer Science Student</h2>
-            <p>marcos.website</p>
+        <div className='header--container'>
+            <h1 className='name'>Marcos da Mata</h1>
+            <h2 className='student'>Computer Science Student</h2>
+            <p className='any'>marcos.website</p>
         </div>
     )
 }

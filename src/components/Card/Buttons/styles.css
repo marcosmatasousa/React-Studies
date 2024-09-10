@@ -32,11 +32,11 @@
     align-items: center;
 }
 
-img {
+.button--icon {
     margin-top: 2px;
 }
 
-a {
+.button--anchor {
     text-decoration: none;
     color: #FFF;
 }

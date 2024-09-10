@@ -1,0 +1,39 @@
+.hero {
+    background-color: white;
+    font-family: Poppins, sans-serif;
+}
+
+.photo--container {
+    display: flex;
+    justify-content: center;
+}
+
+.hero--photo {
+    max-width: 396px;
+    max-height: 232px;
+    margin-top: 26px;
+    margin-bottom: 32px;
+    align-self: center;
+}
+
+.hero > h1 {
+    margin: 0;
+    color: black;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    max-width: 347px;
+    margin-left: 36px;
+    margin-bottom: 16px;
+}
+
+.hero > p {
+    margin: 0;
+    color: #222;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 320px;
+    margin-left: 36px;
+    padding-bottom: 49px;
+}

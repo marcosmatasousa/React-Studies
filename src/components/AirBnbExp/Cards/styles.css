@@ -1,0 +1,10 @@
+.cards {
+    height: 450px;
+    width: 550px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+.cards--container {
+    margin-left: 37px;
+}

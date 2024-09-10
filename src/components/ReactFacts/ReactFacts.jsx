@@ -1,5 +1,5 @@
-import Navbar from '../Navbar/Navbar'
-import Facts from '../Facts/Facts'
+import Navbar from './Navbar/Navbar'
+import Facts from './Facts/Facts'
 
 function ReactFacts(){
     return(

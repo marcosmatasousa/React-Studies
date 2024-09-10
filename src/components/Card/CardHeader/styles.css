@@ -1,9 +1,9 @@
-body {
+.header--container {
     font-family: Inter, sans-serif;
     color: white;
 }
 
-h1 {
+.name {
     font-size: 25px;
     font-weight: 700;
     text-align: center;
@@ -11,7 +11,7 @@ h1 {
     padding-top: 21px;
 }
 
-h2 { 
+.student { 
     color: #F3BF99;
     text-align: center;
     font-size: 12.8px;
@@ -19,7 +19,7 @@ h2 {
     padding-bottom: 5px;
 }
 
-p {
+.any {
     text-align: center;
     font-size: 10.24px;
     font-weight: 400;
