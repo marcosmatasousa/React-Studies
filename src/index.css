@@ -1,6 +1,10 @@
 body, html {
   background-color: #23252C;
   display: flex;
-  justify-content: center;
   margin-top: 5px;
+}
+
+.display {
+  display: flex;
+  gap: 30px;
 }
