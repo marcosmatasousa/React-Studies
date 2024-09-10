@@ -1,26 +1,30 @@
 import './styles.css';
 
-function Card() {
+function Card(props) {
+    let badgeText;
+    if (props.openSpots === 0) {
+        badgeText = 'SOLD OUT';
+    } else if (props.location === 'ONLINE') {
+        badgeText = 'ONLINE';
+    }
+
     return(
         <div className="card--container">
             <div className="img--container">
-                <img src="src/assets/image 12.png" alt="image 12" />
-                <div className="status">
-                    <p>SOLD OUT</p>
-                </div>
+                <img src={`/airbnb/${props.coverImg}`} alt="" />
+                {badgeText && <div className="badge">{badgeText}</div>}
             </div>
             <div className="stats">
-                <img className="star" src="src/assets/Star 1.png" alt="" />
-                <span>5.0</span>
-                <span>(6)</span>
-                <span className='gray'>• USA</span>
+                <img className="star" src="airbnb/Star 1.png" alt="" />
+                <span>{props.stats.rating}</span>
+                <span>({props.stats.reviewCount})</span>
+                <span className='gray'>• {props.location}</span>
             </div>
-            <p className='typography'>Life lessons with Katie Zaferes</p>
+            <p className='typography'>{props.title}</p>
             <div className="pricing">
-                <p className='bold'>From $136</p>
+                <p className='bold'>From ${props.price}</p>
                 <p className='typography'> / person</p>
             </div>
-            
         </div>
     )
 }

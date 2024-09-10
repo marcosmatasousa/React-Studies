@@ -1,0 +1,5 @@
+.travelJournal {
+    display: flex;
+    flex-direction: column;
+    height: 649px;
+}

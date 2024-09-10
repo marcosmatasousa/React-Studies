@@ -1,5 +1,5 @@
 .cards {
-    height: 450px;
+    height: 400px;
     width: 550px;
     background-color: white;
     border-radius: 0 0 5px 5px;
@@ -7,4 +7,6 @@
 
 .cards--container {
     margin-left: 37px;
+    display: flex;
+    gap: 18px;
 }

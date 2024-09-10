@@ -1,0 +1,15 @@
+.travelNavbar {
+    font-family: Inter, sans-serif;
+    font-size: 14.461px;
+    font-weight: 500;
+    letter-spacing: -1.085px;
+    color: white;
+    width: 550px;
+    height: 55px;
+    border-radius: 5px 5px 0 0;
+    background-color: #F55A5A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px
+}
