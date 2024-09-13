@@ -20,6 +20,7 @@ react-studies/
 └── index.html    
 
 - The most important folder at this project is the `components` folder. This folder contais the implementation of the components of the course. Each main component have it's children components inside it's own folder.
+- `index.html` contains the root div for rendering the components
 
 # Run
 
