@@ -1,6 +1,6 @@
 # My React studies
 
-This is where I'll be uploading my studies from the <a href="https://youtu.be/bMknfKXIFA8?si=7oPlBrfVy_IwhOLv" target="_blanket">freeCodeCamp React course</a>. 
+This is where I'll be uploading my studies from the <a href="https://youtu.be/bMknfKXIFA8?si=7oPlBrfVy_IwhOLv" target="_blank">freeCodeCamp React course</a>. 
 
 Currently, I've got implemented:
 - React facts card
