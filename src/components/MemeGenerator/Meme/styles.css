@@ -1,0 +1,103 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs-box {
+    display: flex;
+    gap: 33px;
+    margin-top: 28px;
+}
+
+.meme-input-text {
+    margin: 0px;
+    margin-bottom: 3px;
+    color: var(--gray-700, #374151);
+    font-family: Karla;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16.375px;
+}
+
+.meme-input {
+    display: flex;
+    padding: 7.369px 10.644px;
+    align-items: center;
+    gap: 6.55px;
+    border-radius: 4.912px;
+    border: 0.819px solid var(--gray-300, #D1D5DB);
+    box-shadow: 0px 0.819px 1.637px 0px rgba(0, 0, 0, 0.05);
+}
+
+.form-button-container {
+    width: 403px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.meme-form-button {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(90deg, #711F8D 1.14%, #A818DA 100%);
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -1.6px;
+    cursor: pointer;
+}
+
+.img-container {
+    margin-top: 32px;
+    margin-bottom: 47px;
+    width: 403px;
+    height: 268px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.meme-img {
+    border-radius: 2px;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.meme-topText {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    font-family: Impact;
+    font-size: 32px;
+    font-weight: 900;
+    position: absolute;
+    margin: 5px;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+             2px 2px #000000, -2px -2px #000000, 2px -2px #000000, -2px 2px #000000
+}
+
+.meme-bottomText {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    font-family: Impact;
+    font-size: 32px;
+    font-weight: 900;
+    position: absolute;
+    top: 70%;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+             2px 2px #000000, -2px -2px #000000, 2px -2px #000000, -2px 2px #000000
+}

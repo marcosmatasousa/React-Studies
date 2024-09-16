@@ -1,0 +1,29 @@
+.meme-header {
+    height: 65px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.header-img {
+    width: 31px;
+    height: 26px;
+}
+
+.header-title {
+    font-family: Karla;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -2.075px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-project {
+    font-family: Inter;
+    font-size: 11px;
+}
