@@ -7,6 +7,9 @@ Currently, I've got implemented:
 - Business Card
 - Airbnb card
 - Travel Journey page
+- Meme Generator
+
+(Any other component found at the components folder must be considered just as exercise)
 
 # The folder structure
 
