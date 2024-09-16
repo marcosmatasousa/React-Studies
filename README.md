@@ -1,6 +1,6 @@
 # My React studies
 
-This is where I'll be uploading my studies from the <a href="https://youtu.be/bMknfKXIFA8?si=7oPlBrfVy_IwhOLv" target="_blanket">freeCodeCamp React course</a>. 
+This is where I'll be uploading my studies from the <a href="https://youtu.be/bMknfKXIFA8?si=7oPlBrfVy_IwhOLv" target="_blank">freeCodeCamp React course</a>. 
 
 Currently, I've got implemented:
 - React facts card
@@ -12,14 +12,15 @@ Currently, I've got implemented:
 
 The structure of the projects follows this pattern:
 
-react-studies/
-├── public/
+react-studies/      
+├── public/      
 ├── src/         
-│   ├── assets/     
-│   └── components/ 
-└── index.html
+│   ├── assets/       
+│   └── components/   
+└── index.html    
 
 - The most important folder at this project is the `components` folder. This folder contais the implementation of the components of the course. Each main component have it's children components inside it's own folder.
+- `index.html` contains the root div for rendering the components
 
 # Run
 
