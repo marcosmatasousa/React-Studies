@@ -6,10 +6,10 @@ import './styles.css'
 function Travels() {
     const travels = data.map(item => {
         return (
-            <Travel
-                key={item.id}
-                {...item}
-            />
+                <Travel
+                    key={item.id}
+                    {...item}
+                />
         )
     })
 
