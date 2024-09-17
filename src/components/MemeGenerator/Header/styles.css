@@ -6,6 +6,7 @@
     justify-content: space-around;
     color: white;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    border-radius: 5px 5px 0 0;
 }
 
 .header-img {

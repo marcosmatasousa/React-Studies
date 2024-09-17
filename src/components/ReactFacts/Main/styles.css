@@ -2,10 +2,10 @@
     width: 550px;
     height: 459px;
     padding: 30px;
-    
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: center;
+    border-radius: 0 0 5px 5px;
 }
 
 .main > h1 {

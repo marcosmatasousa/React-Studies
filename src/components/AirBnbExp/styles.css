@@ -1,3 +1,5 @@
 .bnb--body {
     font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
 }
