@@ -1,11 +1,19 @@
+import { useState } from 'react';
+
 import Navbar from './Navbar/Navbar'
-import Facts from './Facts/Facts'
+import Facts from './Main/Main'
 
 function ReactFacts(){
+    const [darkTheme, setDarkTheme] = useState();
+
+    function changeTheme() {
+        setDarkTheme(!darkTheme);
+    }
+
     return(
         <div>
-            <Navbar />
-            <Facts />
+            <Navbar darkTheme={darkTheme} changeTheme={changeTheme} />
+            <Facts darkTheme={darkTheme} />
         </div>
     )
 }

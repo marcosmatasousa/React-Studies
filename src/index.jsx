@@ -16,6 +16,6 @@ const root = createRoot(rootElement);
 
 root.render(
     <div className='display'>
-      <SignUp />
+      <ReactFacts />
     </div>
 );

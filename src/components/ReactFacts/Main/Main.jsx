@@ -1,8 +1,17 @@
 import './styles.css'
 
-function Main(){
+function Main(props){
+
+    const mainStyles = {
+        backgroundColor: !props.darkTheme ?  "white" : "#282D35",
+        color: !props.darkTheme ? "#2B283A" : "white",
+        backgroundImage: !props.darkTheme ? 
+            "url('/react-facts/react-logo-light.svg')" :
+            "url('/react-facts/react-logo-dark.svg')"
+    };
+
     return(
-        <main className="main">
+        <main style={mainStyles} className="main">
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
