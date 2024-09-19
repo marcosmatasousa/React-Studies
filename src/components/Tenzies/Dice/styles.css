@@ -1,0 +1,17 @@
+.tenzies-dice {
+    width: 45.84px;
+    height: 45.84px;
+    border-radius: 3.813px;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    color: #2B283A;
+    font-size: 20.589px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tenzies-checked-dice {
+    background-color: #59E391;
+}

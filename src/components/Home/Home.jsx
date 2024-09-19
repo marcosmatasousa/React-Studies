@@ -20,6 +20,9 @@ function Home() {
             <li>
                 <Link className="home-link" to="/meme-generator">MemeGenerator</Link>
             </li>
+            <li>
+                <Link className="home-link" to="/tenzies">Tenzies</Link>
+            </li>
         </ul>
     )
 }

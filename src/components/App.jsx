@@ -6,6 +6,7 @@ import BusinessCard from './BusinessCard/BusinessCard';
 import ReactFacts from './ReactFacts/ReactFacts';
 import TravelJourney from './TravelJourney/TravelJourney';
 import MemeGenerator from './MemeGenerator/MemeGenerator';
+import Tenzies from './Tenzies/Tenzies';
 
 import './styles.css'
 
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/airbnb" element={<AirBnbExp />} />
                     <Route path="/travel-journey" element={<TravelJourney />} />
                     <Route path="/meme-generator" element={<MemeGenerator />} />
+                    <Route path="/tenzies" element={<Tenzies />} />
             </Routes>
         </Router>
     </div>

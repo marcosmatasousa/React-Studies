@@ -1,0 +1,67 @@
+.tenzies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0B2434;
+    width: 420px;
+    height: 439px;
+}
+
+.tenzies-main {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    display: flex;
+    width: 380px;
+    height: 380px;
+    padding: 33.28px 34.56px 33.92px 34.56px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Karla;
+}
+
+.tenzies-title {
+    color: #2B283A;
+    text-align: center;
+    font-size: 25.6px;
+    font-weight: 700;
+    letter-spacing: -0.768px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.tenzies-instructions {
+    margin: 0px;
+    color: #4A4E74;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13.107px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.393px;
+    max-width: 233px;;
+}
+
+.tenzies-dices {
+    margin-top: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.tenzies-roll {
+    width: 102.16px;
+    height: 45.84px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 16.384px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
