@@ -1,0 +1,16 @@
+.newgame-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 242px;
+    border-radius: 10px;
+    background: #F4F6F5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+}
+
+.newgame-button:hover {
+    background-color: #C5A0D7;
+    cursor: pointer;
+}

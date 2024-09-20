@@ -1,0 +1,26 @@
+.tic-tac-square {
+    border-radius: 10px;
+    background: var(--g11-cell, #43115B);
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fredoka";
+    font-size: 64px;
+    font-weight: 500;
+    
+}
+
+.tic-tac-X {
+    color: var(--g11-color, #48D2FE);
+}
+
+.tic-tac-O {
+    color: var(--g12-color, #E2BE00);
+}
+
+.tic-tac-square:hover {
+    background: #5A1E76;
+    cursor: pointer;
+}
