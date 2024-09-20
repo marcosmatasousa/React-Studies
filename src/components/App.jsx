@@ -7,6 +7,7 @@ import ReactFacts from './ReactFacts/ReactFacts';
 import TravelJourney from './TravelJourney/TravelJourney';
 import MemeGenerator from './MemeGenerator/MemeGenerator';
 import Tenzies from './Tenzies/Tenzies';
+import TicTacToe from './TicTacToe/TicTacToe';
 
 import './styles.css'
 
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/travel-journey" element={<TravelJourney />} />
                     <Route path="/meme-generator" element={<MemeGenerator />} />
                     <Route path="/tenzies" element={<Tenzies />} />
+                    <Route path="/tictactoe" element={<TicTacToe />} />
             </Routes>
         </Router>
     </div>

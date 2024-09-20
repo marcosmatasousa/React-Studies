@@ -23,6 +23,9 @@ function Home() {
             <li>
                 <Link className="home-link" to="/tenzies">Tenzies</Link>
             </li>
+            <li>
+                <Link className="home-link" to="/tictactoe">Tic Tac Toe</Link>
+            </li>
         </ul>
     )
 }
