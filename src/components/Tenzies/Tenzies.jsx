@@ -2,30 +2,62 @@ import { useState } from 'react';
 import Dice from './Dice/Dice';
 import './styles.css';
 
-const getRandomDice = () => Math.floor(Math.random() * 6);
-const nums = Array(10).fill()
+const getRandomDice = () => Math.floor(Math.random() * 6) + 1;
 
-const initialState = nums.map(() => {
-    return {checked: false, num: getRandomDice()}
-});
+function getInitialState() {
+    const nums = Array(10).fill()
+    const initialState = nums.map(() => {
+        return {checked: false, num: getRandomDice()}
+    });
+    return initialState;
+}
 
 function Tenzies() {
-    const [dices, setDices] = useState(initialState);
+    const [dices, setDices] = useState(getInitialState);
+    const [roll, setRoll] = useState("Roll")
+    const [checkedDices, setCheckedDices] = useState(1);
     
-    function handleClick(diceIndex) {
-        
+    function handleDiceClick(diceIndex) {
+        const sum = dices[diceIndex].checked ? -1 : 1
+        setCheckedDices(checkedDices => checkedDices + sum);
+        const newArr = [...dices];
+        newArr[diceIndex].checked = !newArr[diceIndex].checked;
+        setDices(newArr);
+        if (checkedDices === 10) {checkGame();}
+    }
+
+    function checkGame() {
+        const diceObj = JSON.stringify(dices[0]);
+        if (dices.every((dice) => JSON.stringify(dice) === diceObj)) {
+            setRoll("Play again");
+        }
+    }
+
+    function handleRollClick() {
+        if (roll === "Play again") {
+            setRoll("Roll");
+            setDices(getInitialState());
+            return;
+        }
+        for (const dice of dices) {
+            if (!dice.checked) {
+                dice.num = getRandomDice();
+            }
+        }
+        const newArr = [...dices]
+        setDices(newArr);
     }
 
     const dicesArr = dices.map((obj, index) => {
         return <Dice
             key={index}
+            id={index}
             className="tenzies-dice"
             checked={obj.checked}
             num={obj.num}
-            //onClick={handleClick}
+            handleClick={handleDiceClick}
         />
     })
-    console.log(dicesArr)
 
     return(
         <div className="tenzies-container">
@@ -35,7 +67,7 @@ function Tenzies() {
                 <div className="tenzies-dices">
                     {dicesArr}
                 </div>
-                <div className="tenzies-roll">Roll</div>
+                <div onClick={handleRollClick} className="tenzies-roll">{roll}</div>
             </div>
         </div>
     )
