@@ -59,7 +59,25 @@ function TicTacToe() {
                     </div>
                 </div>
                 <div className="tic-tac-board">
+<<<<<<< HEAD
                     {squaresArr}
+=======
+                    <div className="tic-tac-row">
+                        <Square />
+                        <Square />
+                        <Square />
+                    </div>
+                    <div className="tic-tac-row">
+                        <Square />
+                        <Square />
+                        <Square />
+                    </div>
+                    <div className="tic-tac-row">
+                        <Square />
+                        <Square />
+                        <Square />
+                    </div>
+>>>>>>> 7c3dba5e31cbb04e9c846141b8a41788618e0988
                     <NewGameButton />
                 </div>
             </main>
