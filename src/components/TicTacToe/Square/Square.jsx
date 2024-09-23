@@ -11,4 +11,8 @@ function Square(props) {
     )
 }
 
+<<<<<<< HEAD
 export default Square;
+=======
+export default Square;
+>>>>>>> 7c3dba5e31cbb04e9c846141b8a41788618e0988
