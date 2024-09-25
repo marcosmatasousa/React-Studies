@@ -1,7 +1,7 @@
 .tic-tac-body {
     background-color:  #5A1E76;
     display: flex;
-    width: 100%;
+    width: 40%;
     border-radius: 50px;
     justify-content: center;
 }
@@ -19,6 +19,7 @@
     font-family: Fredoka;
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 40px;
 }
 
 .tic-tac-score {

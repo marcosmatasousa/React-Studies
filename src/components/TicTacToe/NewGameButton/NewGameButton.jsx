@@ -1,9 +1,9 @@
 import './styles.css'
 
-function NewGameButton() {
+function NewGameButton(props) {
     return (
-        <div className="newgame-button">New Game</div>
+        <div onClick={props.handleClick} className="newgame-button">New Game</div>
     )
 }
 
-export default NewGameButton
+export default NewGameButton;
