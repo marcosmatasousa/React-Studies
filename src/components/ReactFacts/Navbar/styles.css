@@ -9,6 +9,7 @@ body {
 
 .nav {
     height: 91px;
+    width: 550px;
     display: flex;
     align-items: center;
     justify-content: space-between;

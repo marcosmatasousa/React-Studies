@@ -1,5 +1,5 @@
 import Header from './Header/Header'
-import Form from './Meme/Meme';
+import Meme from './Meme/Meme';
 
 import './styles.css'
 
@@ -8,7 +8,7 @@ function MemeGenerator() {
         <div>
             <Header />
             <div className="body">
-                <Form />
+                <Meme />
             </div>
         </div>
     )

@@ -1,6 +1,7 @@
 .hero {
     background-color: white;
     font-family: Poppins, sans-serif;
+    width: 550px;
 }
 
 .photo--container {

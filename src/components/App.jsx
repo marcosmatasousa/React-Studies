@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './Home/Home';
 import AirBnbExp from './AirBnbExp/AirBnbExp';
@@ -11,21 +11,48 @@ import TicTacToe from './TicTacToe/TicTacToe';
 
 import './styles.css'
 
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Home />,
+        children: [
+            {
+                path: "/react-facts",
+                element: <ReactFacts />
+            },
+            {
+                path: "business",
+                element: <BusinessCard />
+            },
+            {
+                path: "airbnb",
+                element: <AirBnbExp />
+            },
+            {
+                path: "/travel-journey",
+                element: <TravelJourney />
+            },
+            {
+                path: "/meme-generator",
+                element: <MemeGenerator />
+            },
+            {
+                path: "/tenzies",
+                element: <Tenzies />
+            },
+            {
+                path: "/tictactoe",
+                element: <TicTacToe />
+            },
+        ]
+    },
+    
+])
+
 function App() {
     return (
     <div className="projects">
-        <Router>
-            <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/react-facts" element={<ReactFacts />} />
-                    <Route path="/business" element={<BusinessCard />} />
-                    <Route path="/airbnb" element={<AirBnbExp />} />
-                    <Route path="/travel-journey" element={<TravelJourney />} />
-                    <Route path="/meme-generator" element={<MemeGenerator />} />
-                    <Route path="/tenzies" element={<Tenzies />} />
-                    <Route path="/tictactoe" element={<TicTacToe />} />
-            </Routes>
-        </Router>
+        <RouterProvider router={router} />
     </div>
     )
 }

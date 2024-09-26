@@ -16,12 +16,12 @@
     letter-spacing: -0.05em;
 }
 
-li {
+.facts-list > li {
     padding-block: 10px;
     max-width: 400px;
 }
 
-li::marker {
+.facts-list > li::marker {
     font-size: 1.4rem;
     color: #61DAFB;
 }
