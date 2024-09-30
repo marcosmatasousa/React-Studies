@@ -1,4 +1,4 @@
-.tic-tac-body {
+.body {
     background-color:  #5A1E76;
     display: flex;
     width: 450px;
@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.tic-tac-main {
+.main {
     margin-top: 40px;
     border-radius: 20px;
     background: #2B0040;
@@ -22,7 +22,7 @@
     margin-bottom: 40px;
 }
 
-.tic-tac-score {
+.score {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@
     
 }
 
-.tic-tac-scorebox {
+.scorebox {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -43,23 +43,23 @@
     margin-bottom: 30px;
 }
 
-.scorebox-x {
+.scoreboxX {
     background: var(--g11-color, #48D2FE);
 }
 
-.scorebox-draw {
+.scoreboxDraw {
     background-color: #BCDBF9;
 }
 
-.scorebox-o {
+.scoreboxO {
     background-color: #E2BE00;
 }
 
-.score-typography {
+.scoreTypography {
     margin: 14px 5px 7px 5px;
 }
 
-.score-number {
+.scoreNumber {
     margin: 0px 25px 14px 25px;
     color: #000;
     font-family: Inter;
@@ -67,7 +67,7 @@
     font-weight: 700;
 }
 
-.tic-tac-board {
+.board {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;

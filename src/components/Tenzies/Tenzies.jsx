@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Dice from './Dice/Dice';
-import './styles.css';
+
+import styles from './Tenzies.module.css';
 
 const getRandomDice = () => Math.floor(Math.random() * 6) + 1;
 
@@ -52,7 +53,7 @@ function Tenzies() {
         return <Dice
             key={index}
             id={index}
-            className="tenzies-dice"
+            className={styles.tenziesDice}
             checked={obj.checked}
             num={obj.num}
             handleClick={handleDiceClick}
@@ -60,14 +61,14 @@ function Tenzies() {
     })
 
     return(
-        <div className="tenzies-container">
-            <div className="tenzies-main">
-                <h1 className='tenzies-title'>Tenzies</h1>
-                <p className="tenzies-instructions">Roll until all dice are the same. Click each dice to freeze it at its current value between rolls.</p>
-                <div className="tenzies-dices">
+        <div className={styles.tenziesContainer}>
+            <div className={styles.tenziesMain}>
+                <h1 className={styles.tenziesTitle}>Tenzies</h1>
+                <p className={styles.tenziesInstructions}>Roll until all dice are the same. Click each dice to freeze it at its current value between rolls.</p>
+                <div className={styles.tenziesDices}>
                     {dicesArr}
                 </div>
-                <div onClick={handleRollClick} className="tenzies-roll">{roll}</div>
+                <div onClick={handleRollClick} className={styles.tenziesRoll}>{roll}</div>
             </div>
         </div>
     )

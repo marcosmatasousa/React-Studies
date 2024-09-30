@@ -1,4 +1,4 @@
-import './styles.css'
+import styles from './Navbar.module.css';
 
 function Navbar(props) {
 
@@ -24,14 +24,14 @@ function Navbar(props) {
     }
     
     return(
-        <nav style={navbarStyles} className="nav">
-            <div className="react-facts-title">
-                <img className='react-facts-img' src="/react-facts/reactjs-icon 1.svg" alt=""/>
+        <nav style={navbarStyles} className={styles.nav}>
+            <div className={styles.reactFactsTitle}>
+                <img className={styles.reactFactsImg} src="/react-facts/reactjs-icon 1.svg" alt=""/>
                 <h1 style={navbarStyles.titleStyle}>ReactFacts</h1>
             </div>
-            <div className='toggle-theme'>
+            <div className={styles.toggleTheme}>
                 <span style={navbarStyles.lightStyle}>Light</span>
-                <div className="toggle-img-container">
+                <div className={styles.toggleImgContainer}>
                     {!props.darkTheme && <img
                         src="/react-facts/toggle-light.svg" 
                         alt="toggle-button"

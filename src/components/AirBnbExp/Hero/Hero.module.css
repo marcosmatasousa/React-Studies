@@ -4,12 +4,12 @@
     width: 550px;
 }
 
-.photo--container {
+.photoContainer {
     display: flex;
     justify-content: center;
 }
 
-.hero--photo {
+.heroPhoto {
     max-width: 396px;
     max-height: 232px;
     margin-top: 26px;

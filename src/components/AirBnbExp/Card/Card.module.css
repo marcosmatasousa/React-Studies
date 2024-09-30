@@ -1,9 +1,9 @@
-.card--container {
+.cardContainer {
     display: flex;
     flex-direction: column;
 }
 
-.img--container {
+.imgContainer {
     position: relative;
 }
 

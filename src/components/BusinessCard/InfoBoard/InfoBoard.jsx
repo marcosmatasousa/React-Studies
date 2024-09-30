@@ -6,11 +6,11 @@ const aboutText = "I am a frontend developer with a particular interest in makin
 
 const interestsText = "Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.";
 
-import './styles.css'
+import styles from './InfoBoard.module.css';
 
 function InfoBoard() {
     return (
-        <div className='info'>
+        <div className={styles.info}>
             <CardHeader />
             <Buttons />
             <Section text={aboutText} title="About" />

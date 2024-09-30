@@ -1,6 +1,6 @@
 import Card from '../Card/Card';
 import data from './data';
-import './styles.css';
+import styles from './Cards.module.css';
 
 function Cards() {
     const cards = data.map(item => {
@@ -13,8 +13,8 @@ function Cards() {
     })
 
     return (
-        <section className="cards">
-            <div className="cards--container">
+        <section className={styles.cards}>
+                <div className={styles.cardsContainer}>
                 {cards}
             </div>
         </section>

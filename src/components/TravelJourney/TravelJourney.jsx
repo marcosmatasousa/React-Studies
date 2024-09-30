@@ -1,4 +1,4 @@
-import Navbar from './Navbar/Navbar';
+import Header from './Header/Header';
 import Travels from './Travels/Travels';
 
 import './styles.css'
@@ -6,7 +6,7 @@ import './styles.css'
 function TravelJourney() {
     return (
         <div className='travelJournal'>
-            <Navbar />
+            <Header />
             <Travels />
         </div>
     )

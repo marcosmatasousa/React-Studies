@@ -1,8 +1,8 @@
-import './styles.css'
+import styles from './ProfilePic.module.css';
 
 function ProfilePic(){
     return(
-        <img className='profile' src="src/assets/businesscard/profilepic.jpg"></img>
+        <img className={styles.profile} src="src/assets/businesscard/profilepic.jpg"></img>
     )
 }
 

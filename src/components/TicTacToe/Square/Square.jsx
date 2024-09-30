@@ -1,10 +1,10 @@
-import './styles.css';
+import styles from './Square.module.css';
 
 function Square(props) {
     return (
         <div 
             onClick={props.handleClick} 
-            className={`tic-tac-square ${props.play === "X" ?"tic-tac-X" : "tic-tac-O" }`}
+            className={`${styles.square} ${props.play === "X" ? styles.X : styles.O }`}
         >
             {props.play}
         </div>

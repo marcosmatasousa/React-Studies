@@ -5,7 +5,7 @@
     border-radius: 0 0 5px 5px;
 }
 
-.cards--container {
+.cardsContainer {
     margin-left: 37px;
     display: flex;
     gap: 18px;

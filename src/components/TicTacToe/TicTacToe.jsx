@@ -4,7 +4,7 @@ import Square from './Square/Square';
 import NewGameButton from './NewGameButton/NewGameButton';
 import Turn from './Turn/Turn';
 
-import './styles.css';
+import styles from './TicTacToe.module.css';
 
 function getInitialState() {
     const result = Array(9).fill("");
@@ -91,23 +91,23 @@ function TicTacToe() {
     })
 
     return (
-        <div className='tic-tac-body'>
-            <main className="tic-tac-main">
-                <div className="tic-tac-score">
-                    <div className="tic-tac-scorebox scorebox-x">
-                        <p className='score-typography'>Player X</p>
-                        <p className='score-number'>{xCount}</p>
+        <div className={styles.body}>
+            <main className={styles.main}>
+                <div className={styles.score}>
+                    <div className={`${styles.scorebox} ${styles.scoreboxX}`}>
+                        <p className={styles.scoreTypography}>Player X</p>
+                        <p className={styles.scoreNumber}>{xCount}</p>
                     </div>
-                    <div className="tic-tac-scorebox scorebox-draw">
-                        <p className='score-typography'>Draw</p>
-                        <p className='score-number'>{drawsCount}</p>
+                    <div className={`${styles.scorebox} ${styles.scoreboxDraw}`}>
+                        <p className={styles.scoreTypography}>Draw</p>
+                        <p className={styles.scoreNumber}>{drawsCount}</p>
                     </div>
-                    <div className="tic-tac-scorebox scorebox-o">
-                        <p className='score-typography'>Player O</p>
-                        <p className='score-number'>{oCount}</p>
+                    <div className={`${styles.scorebox} ${styles.scoreboxO}`}>
+                        <p className={styles.scoreTypography}>Player O</p>
+                        <p className={styles.scoreNumber}>{oCount}</p>
                     </div>
                 </div>
-                <div className="tic-tac-board">
+                <div className={styles.board}>
                     {squaresArr}
                     {!winner && <Turn winner={winner} xTurn={xTurn} draw={draw} />}
                     {winner && <Turn winner={winner} xTurn={xTurn} draw={draw} />}

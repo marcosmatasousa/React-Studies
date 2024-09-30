@@ -1,12 +1,13 @@
-import './styles.css';
+import styles from './Turn.module.css';
 
 function Turn(props) {
-    const turn = props.xTurn ? "X" : "O"
+    const turnStyles = props.xTurn ? styles.xTurn : styles.oTurn;
+    const turn = props.xTurn ? "X" : "O";
     return (
         <>
-            {(!props.winner && !props.draw) && <div className={`turn ${turn}-turn`}>{`${turn} turn`}</div>}
-            {props.winner && <div className={`turn ${turn}-turn`}>{`${turn} won`}</div>}
-            {props.draw && <div className={`turn`}>Draw!</div>}
+            {(!props.winner && !props.draw) && <div className={`${styles.turn} ${turnStyles}`}>{`${turn} turn`}</div>}
+            {props.winner && <div className={`${styles.turn} ${turnStyles}`}>{`${turn} won`}</div>}
+            {props.draw && <div className={styles.turn}>Draw!</div>}
         </>
     )
 }

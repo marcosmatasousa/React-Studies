@@ -1,4 +1,4 @@
-import './styles.css';
+import styles from './Card.module.css';
 
 function Card(props) {
     let badgeText;
@@ -9,10 +9,10 @@ function Card(props) {
     }
 
     return(
-        <div className="card--container">
-            <div className="img--container">
+        <div className={styles.cardContainer}>
+            <div className={styles.imgContainer}>
                 <img src={`/airbnb/${props.coverImg}`} alt="" />
-                {badgeText && <div className="badge">{badgeText}</div>}
+                {badgeText && <div className={styles.badge}>{badgeText}</div>}
             </div>
             <div className="stats">
                 <img className="star" src="airbnb/Star 1.png" alt="" />
@@ -20,10 +20,10 @@ function Card(props) {
                 <span>({props.stats.reviewCount})</span>
                 <span className='gray'>• {props.location}</span>
             </div>
-            <p className='typography'>{props.title}</p>
-            <div className="pricing">
-                <p className='bold'>From ${props.price}</p>
-                <p className='typography'> / person</p>
+            <p className={styles.typography}>{props.title}</p>
+            <div className={styles.pricing}>
+                <p className={styles.bold}>From ${props.price}</p>
+                <p className={styles.typography}> / person</p>
             </div>
         </div>
     )

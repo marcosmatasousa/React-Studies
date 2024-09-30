@@ -1,4 +1,4 @@
-.newgame-button {
+.newGameButton {
     background: #F4F6F5;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
     margin-top: 20px;
 }
 
-.newgame-button:hover {
+.newGameButton:hover {
     background-color: #C5A0D7;
     cursor: pointer;
 }

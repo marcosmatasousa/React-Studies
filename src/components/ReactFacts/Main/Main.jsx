@@ -1,4 +1,4 @@
-import './styles.css'
+import styles from './Main.module.css';
 
 function Main(props){
 
@@ -11,9 +11,9 @@ function Main(props){
     };
 
     return(
-        <main style={mainStyles} className="main">
+        <main style={mainStyles} className={styles.main}>
             <h1>Fun facts about React</h1>
-            <ul className='facts-list'>
+            <ul className={styles.factsList}>
                 <li>Was first released in 2013</li>
                 <li>Was originally created by Jordan Walke</li>
                 <li>Has well over 200K stars on GitHub</li>

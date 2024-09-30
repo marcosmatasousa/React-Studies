@@ -1,4 +1,4 @@
-.tenzies-container {
+.tenziesContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     height: 439px;
 }
 
-.tenzies-main {
+.tenziesMain {
     background-color: #F5F5F5;
     border-radius: 10px;
     display: flex;
@@ -20,7 +20,7 @@
     font-family: Karla;
 }
 
-.tenzies-title {
+.tenziesTitle {
     color: #2B283A;
     text-align: center;
     font-size: 25.6px;
@@ -30,7 +30,7 @@
     margin-bottom: 8px;
 }
 
-.tenzies-instructions {
+.tenziesInstructions {
     margin: 0px;
     color: #4A4E74;
     text-align: center;
@@ -42,7 +42,7 @@
     max-width: 233px;;
 }
 
-.tenzies-dices {
+.tenziesDices {
     margin-top: 31px;
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 
-.tenzies-roll {
+.tenziesRoll {
     width: 102.16px;
     height: 45.84px;
     background-color: #5035FF;

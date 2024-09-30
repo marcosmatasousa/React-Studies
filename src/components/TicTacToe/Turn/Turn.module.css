@@ -10,10 +10,10 @@
     background-color: #BCDBF9;
 }
 
-.X-turn {
+.xTurn {
     background-color: var(--g11-color, #48D2FE);
 }
 
-.O-turn {
+.oTurn {
     background-color: #E2BE00;
 }

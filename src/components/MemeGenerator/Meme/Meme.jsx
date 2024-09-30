@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import './styles.css';
 import memesData from './memesData';
+
+import styles from './Meme.module.css';
 
 const initialState = {
     topText: "",
@@ -33,23 +34,23 @@ function Meme() {
 
     return(
         
-        <div className="form-container">
-            <div className="form">
-                <div className="inputs-box">
-                    <div className="input-box">
-                        <label className='meme-input-text'>Top text</label>
+        <div className={styles.formContainer}>
+            <div className={styles.form}>
+                <div className={styles.inputsBox}>
+                    <div className={styles.inputBox}>
+                        <label className={styles.memeInputText}>Top text</label>
                         <input
-                            className='meme-input'
+                            className={styles.memeInput}
                             name="topText"
                             type="text"
                             onChange={handleChange}
                             value={meme.topText}
                         />
                     </div>
-                    <div className="input-box">
-                        <label className='meme-input-text'>Bottom text</label>
+                    <div className={styles.inputBox}>
+                        <label className={styles.memeInputText}>Bottom text</label>
                         <input
-                            className='meme-input'
+                            className={styles.memeInput}
                             name="bottomText"
                             type="text"
                             onChange={handleChange}
@@ -58,21 +59,21 @@ function Meme() {
                     </div>
                 </div>
             </div>
-            <div className='form-button-container'>
+            <div className={styles.formButtonContainer}>
                 <button
                     onClick={getMemeImage}
-                    className='meme-form-button'>
+                    className={styles.memeFormButton}>
                     Get new meme image
                 </button>
             </div>
-            <div className='img-container'>
+            <div className={styles.imgContainer}>
                 <img 
-                    className='meme-img'
+                    className={styles.memeImg}
                     src={meme.randomImage} 
                     alt="meme-image"
                 />
-                <p className='meme-topText'>{meme.topText.toUpperCase()}</p>
-                <p className="meme-bottomText">{meme.bottomText.toUpperCase()}</p>
+                <p className={styles.memeTopText}>{meme.topText.toUpperCase()}</p>
+                <p className={styles.memeBottomText}>{meme.bottomText.toUpperCase()}</p>
             </div>
         </div>
     )
