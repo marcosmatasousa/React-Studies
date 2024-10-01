@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './Navbar.module.css';
 
 function Navbar(props) {
@@ -57,6 +59,11 @@ function Navbar(props) {
             </div>
         </nav>
     )
+}
+
+Navbar.propTypes = {
+    darkTheme: PropTypes.bool.isRequired,
+    changeTheme: PropTypes.func.isRequired
 }
 
 export default Navbar;

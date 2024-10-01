@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './Card.module.css';
 
 function Card(props) {
@@ -28,5 +30,14 @@ function Card(props) {
         </div>
     )
 }
+
+Card.propTypes = {
+    openSpots: PropTypes.number,
+    location: PropTypes.string,
+    coverImg: PropTypes.string,
+    stats: PropTypes.object,
+    title: PropTypes.string,
+    price: PropTypes.number
+};
 
 export default Card;

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './Main.module.css';
 
 function Main(props){
@@ -22,6 +24,10 @@ function Main(props){
             </ul>
         </main>
     )
+}
+
+Main.propTypes = {
+    darkTheme: PropTypes.bool.isRequired
 }
 
 export default Main

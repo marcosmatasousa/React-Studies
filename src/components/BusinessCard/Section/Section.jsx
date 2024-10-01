@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './Section.module.css';
 
 function Section({title, text}) {
@@ -8,5 +10,10 @@ function Section({title, text}) {
         </section>
     )
 }
+
+Section.propTypes = {
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string
+};
 
 export default Section;

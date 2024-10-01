@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './Travel.module.css';
 
 function Travel(props) {
@@ -16,6 +18,16 @@ function Travel(props) {
             </div>
         </section>
     )
+}
+
+Travel.propTypes = {
+    imageUrl: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    googleMapsUrl: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    startDate: PropTypes.string.isRequired,
+    endDate: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
 }
 
 export default Travel;

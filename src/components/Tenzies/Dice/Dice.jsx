@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './styles.css';
 
 function Dice(props) {
@@ -9,6 +11,13 @@ function Dice(props) {
                 {props.num}
             </div>
     )
+}
+
+Dice.propTypes = {
+    checked: PropTypes.bool.isRequired,
+    handleClick: PropTypes.func.isRequired,
+    id: PropTypes.number.isRequired,
+    num: PropTypes.number.isRequired
 }
 
 export default Dice;
